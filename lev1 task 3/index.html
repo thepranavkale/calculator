@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+ 
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="task-bar">
+            <div id="p1"></div>
+            <div class="icons">
+                <i class="bi bi-bell-slash-fill"></i>
+                <i class="bi bi-bluetooth"></i>
+                <i class="bi bi-battery-charging"></i>
+            </div>
+        </div>
+
+        <div>
+            <h2
+                style=" color: aliceblue; font-size: 25px; padding-top: 50px; text-align: center;font-family: sans-serif;">
+                Temperature Converter</h2>
+        </div>
+        <div class="inputs">
+            <div style="display: flex;
+            flex-direction: column;">
+                <label for="degree">Value <span id="small">(In Numbers...)</span></label>
+                <input type="number" name="degree" id="inputValue" required>
+            </div>
+            <div class="inptsss">
+                <div>
+                    <label for="type">From</label>
+                    <select name="type" id="type1">
+                        <option value="celcius">Celcius</option>
+                        <option value="fahrenheit">Fahrenheit</option>
+                        <option value="kelvin">Kelvin</option>
+                        <option value="rankine">Rankine</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="type">To</label>
+                    <select name="type" id="type2">
+                        <option value="celcius">Celcius</option>
+                        <option value="fahrenheit">Fahrenheit</option>
+                        <option value="kelvin">Kelvin</option>
+                        <option value="rankine">Rankine</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="results">
+            <label for="result">Result</label>
+            <div id="result"></div>
+        </div>
+
+        <button class="btn" type="submit" id="btn" onclick="temperature()">Convert</button>
+    </div>
+
+    <script src="main.js"></script>
+    <footer class="footer">
+        Made by Pranav Kale - Oasis Infobyte level 1 Task 3
+    </footer>
+  
+</body>
+
+</html>
